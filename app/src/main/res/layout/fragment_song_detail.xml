@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/appBackground"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Encabezado con imagen y título -->
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="375dp">
+
+            <ImageView
+                android:id="@+id/ivDetalleCover"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:src="@drawable/portada" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="?attr/appImageOverlay" />
+
+            <TextView
+                android:id="@+id/tvDetalleTitulo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|start"
+                android:padding="24dp"
+                android:text="Nombre de la Canción"
+                android:textColor="?attr/appTextOnImage"
+                android:textSize="28sp"
+                android:textStyle="bold" />
+        </FrameLayout>
+
+        <!-- Información de la canción -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="24dp">
+
+            <TextView
+                style="@style/AppTextLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ARTISTA" />
+
+            <TextView
+                android:id="@+id/tvDetalleArtista"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:text="Audio Da Vinci"
+                android:textColor="?attr/appTextPrimary"
+                android:textSize="18sp" />
+
+            <TextView
+                style="@style/AppTextLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ÁLBUM" />
+
+            <TextView
+                android:id="@+id/tvDetalleAlbum"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:text="Creative Commons Vol. 1"
+                android:textColor="?attr/appTextPrimary"
+                android:textSize="18sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/AppTextLabel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="GÉNERO" />
+
+                    <TextView
+                        android:id="@+id/tvDetalleGenero"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="8bit / Electronic"
+                        android:textColor="?attr/appTextPrimary"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="end"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/AppTextLabel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="DURACIÓN" />
+
+                    <TextView
+                        android:id="@+id/tvDetalleDuracion"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="2:28"
+                        android:textColor="?attr/appTextPrimary"
+                        android:textSize="16sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginVertical="20dp"
+                android:background="?attr/appDivider" />
+
+            <TextView
+                android:id="@+id/tvDetalleFecha"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Lanzamiento: 2017-03-24"
+                android:textColor="?attr/appTextMuted"
+                android:textSize="12sp" />
+
+            <!-- Reproductor de audio -->
+            <LinearLayout
+                android:id="@+id/audioPlayerBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="28dp"
+                android:orientation="vertical"
+                android:padding="18dp"
+                android:background="?attr/appPlayerBackground">
+
+                <SeekBar
+                    android:id="@+id/seekBarAudio"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:max="1000"
+                    android:progress="0"
+                    android:progressTint="?attr/appAccent"
+                    android:thumbTint="?attr/appAccent"
+                    android:progressBackgroundTint="?attr/appDivider" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tvTiempoActual"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="0:00"
+                        android:textColor="?attr/appTextMuted"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/tvTiempoTotal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0:00"
+                        android:textColor="?attr/appTextMuted"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="18dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/btnAnterior"
+                        android:layout_width="58dp"
+                        android:layout_height="58dp"
+                        android:text="⏮"
+                        android:textSize="24sp"
+                        android:textColor="?attr/appAccent"
+                        android:backgroundTint="@color/transparent"
+                        android:stateListAnimator="@null"
+                        android:padding="0dp" />
+
+                    <Button
+                        android:id="@+id/btnPlayPause"
+                        android:layout_width="72dp"
+                        android:layout_height="72dp"
+                        android:layout_marginHorizontal="22dp"
+                        android:text="▶"
+                        android:textSize="30sp"
+                        android:textColor="?attr/appTextOnPrimary"
+                        android:backgroundTint="?attr/appAccent"
+                        android:stateListAnimator="@null"
+                        android:padding="0dp" />
+
+                    <Button
+                        android:id="@+id/btnSiguiente"
+                        android:layout_width="58dp"
+                        android:layout_height="58dp"
+                        android:text="⏭"
+                        android:textSize="24sp"
+                        android:textColor="?attr/appAccent"
+                        android:backgroundTint="@color/transparent"
+                        android:stateListAnimator="@null"
+                        android:padding="0dp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

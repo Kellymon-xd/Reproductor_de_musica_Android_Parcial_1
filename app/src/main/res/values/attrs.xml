@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Fondos -->
+    <attr name="appBackground" format="color" />
+    <attr name="appSurface" format="color" />
+    <attr name="appSurfaceSoft" format="color" />
+    <attr name="appPlayerBackground" format="color" />
+
+    <!-- Textos -->
+    <attr name="appTextPrimary" format="color" />
+    <attr name="appTextSecondary" format="color" />
+    <attr name="appTextMuted" format="color" />
+    <attr name="appTextOnImage" format="color" />
+    <attr name="appTextOnPrimary" format="color" />
+
+    <!-- Acentos -->
+    <attr name="appAccent" format="color" />
+    <attr name="appDivider" format="color" />
+    <attr name="appImageOverlay" format="color" />
+
+</resources>

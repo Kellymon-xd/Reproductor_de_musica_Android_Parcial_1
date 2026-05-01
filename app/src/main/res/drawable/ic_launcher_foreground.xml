@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+
+    <!-- Fondo oscuro tipo app musical -->
+    <path
+        android:fillColor="#15121F"
+        android:pathData="M0,0h108v108h-108z" />
+
+    <!-- Círculo principal rosado -->
+    <path
+        android:fillColor="#FF4081"
+        android:pathData="M54,18
+                          a36,36 0,1 0,0.1 0
+                          M54,18
+                          a36,36 0,1 1,-0.1 0" />
+
+    <!-- Sombra suave inferior -->
+    <path
+        android:fillColor="#33000000"
+        android:pathData="M30,70
+                          C38,83 68,85 79,67
+                          C75,84 64,92 51,91
+                          C38,90 29,82 30,70z" />
+
+    <!-- Disco interior oscuro -->
+    <path
+        android:fillColor="#211A2E"
+        android:pathData="M54,27
+                          a27,27 0,1 0,0.1 0
+                          M54,27
+                          a27,27 0,1 1,-0.1 0" />
+
+    <!-- Brillo del disco -->
+    <path
+        android:fillColor="#22FFFFFF"
+        android:pathData="M36,38
+                          C42,30 56,28 67,34
+                          C56,31 44,34 36,42z" />
+
+    <!-- Botón play blanco -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M48,41
+                          L48,67
+                          L70,54
+                          Z" />
+
+    <!-- Agujero central del disco -->
+    <path
+        android:fillColor="#FF4081"
+        android:pathData="M54,49
+                          a5,5 0,1 0,0.1 0
+                          M54,49
+                          a5,5 0,1 1,-0.1 0" />
+
+    <!-- Nota musical decorativa izquierda -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M33,32
+                          L33,58
+                          C31,57 28,57 26,58
+                          C22,60 21,64 23,67
+                          C25,70 30,70 33,68
+                          C36,66 37,63 37,60
+                          L37,40
+                          L48,43
+                          L48,36
+                          Z" />
+
+    <!-- Ondas de audio derechas -->
+    <path
+        android:fillColor="#00000000"
+        android:strokeColor="#FFFFFF"
+        android:strokeWidth="3"
+        android:strokeLineCap="round"
+        android:pathData="M78,44
+                          C84,49 84,59 78,64" />
+
+    <path
+        android:fillColor="#00000000"
+        android:strokeColor="#FFFFFF"
+        android:strokeWidth="2.4"
+        android:strokeLineCap="round"
+        android:pathData="M84,37
+                          C94,47 94,62 84,72" />
+
+    <!-- Mini ecualizador inferior -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M36,78h5v8h-5z" />
+
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M46,73h5v13h-5z" />
+
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M56,76h5v10h-5z" />
+
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M66,70h5v16h-5z" />
+
+</vector>

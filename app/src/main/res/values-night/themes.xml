@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Theme.Demo_List_v2" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+
+        <!-- Material base -->
+        <item name="colorPrimary">@color/purple_300</item>
+        <item name="colorPrimaryVariant">@color/purple_900</item>
+        <item name="colorSecondary">@color/fuchsia_500</item>
+
+        <!-- Fondos -->
+        <item name="android:windowBackground">@color/purple_950</item>
+        <item name="appBackground">@color/purple_950</item>
+        <item name="appSurface">@color/purple_900</item>
+        <item name="appSurfaceSoft">@color/purple_800</item>
+        <item name="appPlayerBackground">@color/purple_900</item>
+
+        <!-- Textos -->
+        <item name="appTextPrimary">@color/white</item>
+        <item name="appTextSecondary">@color/gray_200</item>
+        <item name="appTextMuted">@color/purple_200</item>
+        <item name="appTextOnImage">@color/white</item>
+        <item name="appTextOnPrimary">@color/white</item>
+
+        <!-- Acentos -->
+        <item name="appAccent">@color/fuchsia_500</item>
+        <item name="appDivider">@color/divider_dark</item>
+        <item name="appImageOverlay">@color/overlay_dark_72</item>
+
+        <!-- Sistema -->
+        <item name="android:statusBarColor">@color/purple_950</item>
+        <item name="android:navigationBarColor">@color/purple_950</item>
+        <item name="android:windowLightStatusBar">false</item>
+    </style>
+
+    <style name="AppTextLabel">
+        <item name="android:textColor">?attr/appAccent</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="AppSortButton" parent="Widget.MaterialComponents.Button.TextButton">
+        <item name="android:textColor">?attr/appAccent</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textSize">14sp</item>
+        <item name="rippleColor">@color/fuchsia_300</item>
+    </style>
+
+    <style name="RoundedImage16">
+        <item name="cornerSize">16dp</item>
+    </style>
+
+</resources>
