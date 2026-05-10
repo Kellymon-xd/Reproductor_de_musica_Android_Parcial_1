@@ -6,6 +6,13 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.app.AppCompatDelegate
 import androidx.appcompat.widget.SwitchCompat
 
+/** Integrantes:
+ * KELLY BEITIA, 8-1023-152 (COORDINADORA)
+ * JORGE SARMIENTO, 3-757-1758
+ * LEONARDO CASTRO, 8-1032-1264
+ * MARIAM HARRIS 1-756-2331
+ */
+
 class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
